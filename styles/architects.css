@@ -9,6 +9,9 @@
     border-radius: 8px;
     background: #FF900E;
     border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* Header styles  */
@@ -49,6 +52,7 @@ header {
 .banner-content {
     text-align: center;
     max-width: 860px;
+    margin: 0 auto;
 }
 
 .banner-title {
@@ -60,4 +64,34 @@ header {
 .banner-description {
     color: #727272;
     line-height: 26px;
+    padding-bottom: 32px;
+}
+
+header img {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+/* responsive design  */
+
+/* for mobile device  */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+}
+
+/* for medium device  */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
 }
