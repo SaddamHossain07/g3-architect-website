@@ -72,35 +72,11 @@ header img {
     margin-top: 4rem;
 }
 
-/* responsive design  */
 
-/* for mobile device  */
-@media screen and (max-width:576px) {
-    header {
-        padding: 20px;
-    }
-
-    .nav {
-        flex-direction: column;
-    }
-}
-
-/* for medium device  */
-@media screen and (min-width:576px) and (max-width:960px) {
-    header {
-        padding: 50px;
-    }
-
-    .nav {
-        flex-direction: column;
-    }
-}
-
-
-/* features secion start  */
+/* team secion start  */
 main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 .team-container {
@@ -143,4 +119,37 @@ main {
     line-height: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+}
+
+
+
+/* responsive design  */
+
+/* for mobile device  */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    .nav,
+    .team-container {
+        flex-direction: column;
+    }
+
+    .team-image-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* for medium device  */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
+
+    .nav,
+    .team-container {
+        flex-direction: column;
+    }
 }
